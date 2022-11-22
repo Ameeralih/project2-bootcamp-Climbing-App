@@ -1,16 +1,22 @@
 import React from "react";
-import logo from "./logo.png";
 import "./App.css";
+import { Outlet, Link } from "react-router-dom";
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
+          <nav
+            style={{
+              borderBottom: "solid 1px",
+              paddingBottom: "1rem",
+            }}
+          >
+            <Link to="/gym-search">Gym Search</Link> |{" "}
+            <Link to="/gym-page">Gym Abc</Link>
+          </nav>
+          <Outlet />
         </header>
       </div>
     );
