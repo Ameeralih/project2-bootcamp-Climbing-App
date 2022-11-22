@@ -14,6 +14,11 @@ export class Reviews extends React.Component {
   });
 
   render() {
-    return <>{this.allReviews}</>;
+    return (
+      <>
+        {this.allReviews}
+        <form></form>
+      </>
+    );
   }
 }
