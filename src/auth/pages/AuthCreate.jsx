@@ -1,8 +1,7 @@
 import React from "react";
-import { auth } from "../../firebase/auth";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { createNewUser } from "../../firebase/auth";
 
-class AuthLogin extends React.Component {
+class AuthCreate extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -19,7 +18,7 @@ class AuthLogin extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    signInWithEmailAndPassword(auth, this.state.email, this.state.password);
+    createNewUser(this.state.email, this.state.password);
   }
 
   render() {
