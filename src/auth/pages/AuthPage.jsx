@@ -2,40 +2,23 @@ import React from "react";
 import { auth } from "../../firebase/auth";
 import { signInWithEmailAndPassword } from "firebase/auth";
 
-class AuthLogin extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      email: "",
-      password: "",
-    };
-  }
+export function AuthLogin() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  handleChange(e) {
-    this.setState({
-      [e.target.name]: e.target.value,
-    });
-  }
-
-  handleSubmit(e) {
+  handleAuthSignIn = (e) => {
     e.preventDefault();
-    signInWithEmailAndPassword(auth, this.state.email, this.state.password);
-  }
+    signInWithEmailAndPassword(auth, email, password);
+  };
 
-  render() {
-    return (
-      <form onSubmit={(e) => this.handleSubmit(e)}>
-        <input name="email" onChange={(e) => this.handleChange(e)}>
-          Email
-        </input>
-        <input
-          type="password"
-          name="password"
-          onChange={(e) => this.handleChange(e)}
-        >
-          Password
-        </input>
-      </form>
-    );
-  }
+  return (
+    <form onSubmit={(e) => this.handleSubmit(e)}>
+      <input name="email" onChange={(e) => setEmail(e.target.value)}>
+        Email
+      </input>
+      <input type="password" onChange={(e) => setPassword(e.target.value)}>
+        Password
+      </input>
+    </form>
+  );
 }

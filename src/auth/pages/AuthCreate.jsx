@@ -1,40 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { createNewUser } from "../../firebase/auth";
 
-class AuthCreate extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      email: "",
-      password: "",
-    };
-  }
-
-  handleChange(e) {
-    this.setState({
-      [e.target.name]: e.target.value,
-    });
-  }
-
-  handleSubmit(e) {
+export const AuthCreate = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  handleAuthCreate = (e) => {
     e.preventDefault();
-    createNewUser(this.state.email, this.state.password);
-  }
+    createNewUser(email, password);
+  };
 
-  render() {
-    return (
-      <form onSubmit={(e) => this.handleSubmit(e)}>
-        <input name="email" onChange={(e) => this.handleChange(e)}>
-          Email
-        </input>
-        <input
-          type="password"
-          name="password"
-          onChange={(e) => this.handleChange(e)}
-        >
-          Password
-        </input>
-      </form>
-    );
-  }
-}
+  return (
+    <form onSubmit={handleAuthCreate}>
+      <input onChange={(e) => setEmail(e.target.value)}>Email</input>
+      <input type="password" onChange={(e) => setPassword(e.target.value)}>
+        Password
+      </input>
+    </form>
+  );
+};
