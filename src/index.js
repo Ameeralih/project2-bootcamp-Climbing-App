@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { GymPage } from "./gym-page/pages/GymPage";
-import GymSearch from "./gym-search/pages/GymSearch";
+import { GymPage } from "./gym-page/GymPage";
+import { GymSearch } from "./gym-search/GymSearch";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

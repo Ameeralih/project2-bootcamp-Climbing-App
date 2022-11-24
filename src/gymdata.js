@@ -380,3 +380,7 @@ export const gymData = [
     },
   },
 ];
+
+export function getGyms() {
+  return gymData;
+}
