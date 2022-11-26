@@ -1,9 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { GymPage } from "./gym-page/GymPage";
 import { GymSearch } from "./components/GymSearch";
 import { GymHomePage } from "./components/GymHomePage";
 import { ViewGym } from "./components/ViewGym";
@@ -19,8 +17,6 @@ root.render(
 
           <Route path=":slug" element={<ViewGym />} />
         </Route>
-
-        <Route path="gym-page" element={<GymPage />} />
         <Route
           path="*"
           element={
