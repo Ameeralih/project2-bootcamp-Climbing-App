@@ -13,8 +13,7 @@ class App extends React.Component {
               paddingBottom: "1rem",
             }}
           >
-            <Link to="/gym-search">Gym Search</Link> |{" "}
-            <Link to="/gym-page">Gym Abc</Link>
+            <Link to="/gym-search">Gym Search</Link>
           </nav>
           <Outlet />
         </header>

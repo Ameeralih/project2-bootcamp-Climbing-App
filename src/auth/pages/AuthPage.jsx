@@ -2,7 +2,7 @@ import React from "react";
 import { auth } from "../../firebase/auth";
 import { signInWithEmailAndPassword } from "firebase/auth";
 
-export function AuthLogin() {
+export const AuthLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -21,4 +21,4 @@ export function AuthLogin() {
       </input>
     </form>
   );
-}
+};

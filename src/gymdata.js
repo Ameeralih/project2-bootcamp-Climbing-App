@@ -3,7 +3,7 @@ export const gymData = [
     name: "BFF(Bendemeer)",
     postal: "339407",
     contact: "9649 4145",
-    website: "www.bffclimb.com",
+    website: "https://www.bffclimb.com",
     bouldering: "yes",
     autobelay: "yes",
     toprope: "no",
@@ -12,6 +12,7 @@ export const gymData = [
     watercooler: "yes",
     ac: "yes",
     hours: "930am-1045pm",
+    slug: "bff-bendemeer",
   },
   {
     name: "BFF(Bukit Timah)",
@@ -38,6 +39,7 @@ export const gymData = [
         sun: "7:30am-10:45pm",
       },
     },
+    slug: "bff-bukit-timah",
   },
   {
     name: "OYEYO",
@@ -55,6 +57,7 @@ export const gymData = [
       weekday: "1pm-10pm",
       weekend: "10am-7pm",
     },
+    slug: "oyeyo",
   },
   {
     name: "Boulder Planet (Sembawang)",
@@ -72,6 +75,7 @@ export const gymData = [
       weekday: "1pm-10pm",
       weekend: "10am-9pm",
     },
+    slug: "boulder-planet-sembawang",
   },
   {
     name: "Boulder Planet (Tai Seng)",
@@ -89,6 +93,7 @@ export const gymData = [
       weekday: "1pm-10pm",
       weekend: "10am-9pm",
     },
+    slug: "boulder-planet-tai-seng",
   },
   {
     name: "Boulder+ (Chevrons)",
@@ -108,6 +113,7 @@ export const gymData = [
       weekend: "8am-8pm",
       PH: "8am-8pm",
     },
+    slug: "boulderplus-chevrons",
   },
   {
     name: "Boulder+ (Aperia)",
@@ -128,6 +134,7 @@ export const gymData = [
       sun: "8am-5:30pm",
       PH: "8am-8pm",
     },
+    slug: "boulderplus-aperia",
   },
   {
     name: "Climb Central Sports Hub",
@@ -145,6 +152,7 @@ export const gymData = [
       weekday: "11am-11pm",
       weekend: "9am-9pm",
     },
+    slug: "climbcentral-sports-hub",
   },
   {
     name: "Climb Central Novena",
@@ -162,6 +170,7 @@ export const gymData = [
       weekday: "11am-11pm",
       weekend: "9am-9pm",
     },
+    slug: "climbcentral-novena",
   },
   {
     name: "Climb Central Funan",
@@ -179,6 +188,7 @@ export const gymData = [
       weekday: "11am-11pm",
       weekend: "9am-9pm",
     },
+    slug: "climbcentral-funan",
   },
   {
     name: "Climb Central Katong",
@@ -196,6 +206,7 @@ export const gymData = [
       weekday: "11am-11pm",
       weekend: "9am-9pm",
     },
+    slug: "climbcentral-katong",
   },
   {
     name: "The Rock School",
@@ -215,6 +226,7 @@ export const gymData = [
       wedtofri: "11am-10pm",
       weekend: "9am-9pm",
     },
+    slug: "the-rock-school",
   },
   {
     name: "b8A",
@@ -233,6 +245,7 @@ export const gymData = [
       sat: "10am-6pm",
       sun: "10am-10pm",
     },
+    slug: "b8a",
   },
   {
     name: "Ark Bloc",
@@ -250,6 +263,7 @@ export const gymData = [
       weekdays: "8pm-12pm, 3pm-10pm",
       weekends: "10am-10pm",
     },
+    slug: "ark-bloc",
   },
   {
     name: "Boulder Movement (Suntec)",
@@ -268,6 +282,7 @@ export const gymData = [
       tuestofri: "12pm-10pm",
       weekends: "10am-10pm",
     },
+    slug: "boulder-movement-suntec",
   },
   {
     name: "Boulder Movement (Bugis)",
@@ -286,6 +301,7 @@ export const gymData = [
       tuestofri: "12pm-10pm",
       weekends: "10am-10pm",
     },
+    slug: "boulder-movement-bugis",
   },
   {
     name: "Boulder Movement (Downtown)",
@@ -304,6 +320,7 @@ export const gymData = [
       tuestofri: "12pm-10pm",
       weekends: "10am-10pm",
     },
+    slug: "boulder-movement-downtown",
   },
   {
     name: "Boulder Movement (Rochor)",
@@ -323,7 +340,9 @@ export const gymData = [
       wed: "9am-10pm",
       weekends: "10am-10pm",
     },
+    slug: "boulder-movement-rochor",
   },
+
   {
     name: "Boulder Movement (Tai Seng)",
     postal: "539775",
@@ -341,6 +360,7 @@ export const gymData = [
       tuestofri: "12pm-10pm",
       weekends: "10am-10pm",
     },
+    slug: "boulder-movement-tai-seng",
   },
   {
     name: "Kinetics",
@@ -359,6 +379,7 @@ export const gymData = [
       tuestofri: "1pm-10pm",
       weekends: "10am-7pm",
     },
+    slug: "kinetics",
   },
   {
     name: "Ground Up",
@@ -378,9 +399,10 @@ export const gymData = [
       friday: "12pm-10:30pm",
       weekends: "10am-9pm",
     },
+    slug: "ground-up",
   },
 ];
 
-export function getGyms() {
-  return gymData;
+export function fetchGyms() {
+  return Object.values(gymData);
 }
