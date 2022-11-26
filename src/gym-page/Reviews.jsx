@@ -1,23 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
-export class Reviews extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: this.props.name,
-      reviews: [],
-    };
-  }
+export const Reviews = () => {
 
-  allReviews = this.state.reviews.map((review) => {
+  const [reviews, setReviews] = useState([])
+  
+  const allReviews = reviews.map((review) => {
     return <div>{review}</div>;
   });
 
   render() {
     return (
       <>
-        {this.allReviews}
-        <form></form>
+        {allReviews}
+        <form onSubmit={setReviews(reviews)}></form>
       </>
     );
   }
