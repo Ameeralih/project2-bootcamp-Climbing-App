@@ -1,11 +1,18 @@
 import { Outlet } from "react-router-dom";
 import "../App.css";
+import { NavBarBottom } from "./NavBarBottom";
+import { NavBarTop } from "./NavBarTop";
 
 export const GymHomePage = () => {
   return (
-    <div className="App">
-      <h1>Gym Finder</h1>
-      <Outlet />
-    </div>
+    <>
+      <NavBarTop />
+      <NavBarBottom />
+      <div className="App">
+        <br />
+        <br />
+        <Outlet />
+      </div>
+    </>
   );
 };
