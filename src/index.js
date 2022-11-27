@@ -14,7 +14,6 @@ root.render(
       <Route path="/" element={<GymHomePage />}>
         <Route path="/gyms" element={<GymSearch />}>
           <Route index element={<GymList />} />
-
           <Route path=":slug" element={<ViewGym />} />
         </Route>
         <Route
