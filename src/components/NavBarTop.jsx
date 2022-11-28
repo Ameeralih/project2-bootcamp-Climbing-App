@@ -1,10 +1,6 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import logo from "../images/search.png";
-import profile from "../images/profile.png";
 import climbinglogo from "../images/climbinglogo.png";
 
 export const NavBarTop = () => {

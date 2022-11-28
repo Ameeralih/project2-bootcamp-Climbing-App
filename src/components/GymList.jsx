@@ -1,6 +1,5 @@
 import { fetchGyms } from "../gymdata";
 import { Link, useSearchParams } from "react-router-dom";
-import { ViewGym } from "./ViewGym";
 import Card from "react-bootstrap/Card";
 import "bootstrap/dist/css/bootstrap.css";
 
