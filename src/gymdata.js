@@ -399,7 +399,7 @@ export const gymData = [
     slug: "boulder-movement-suntec",
   },
   {
-    name: "Boulder Movement (Bugis)",
+    name: "Boulder Movement (Bugis+)",
     address: " 201 Victoria St, #05 - 07",
     postal: "188067",
     contact: "69939228",

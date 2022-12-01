@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const Reviews = () => {
+export const Reviews = ({ currentGym }) => {
   const [reviews, setReviews] = useState([]);
 
   const allReviews = reviews.map((review) => {
@@ -8,9 +8,10 @@ export const Reviews = () => {
   });
 
   return (
-    <>
+    <div>
+      {currentGym.name} reviews:
+      <br />
       {allReviews}
-      <form onSubmit={setReviews(reviews)}></form>
-    </>
+    </div>
   );
 };

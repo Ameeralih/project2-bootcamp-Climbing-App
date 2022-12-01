@@ -3,6 +3,7 @@ import { fetchGyms } from "../gymdata";
 import { GymAmenities } from "./GymAmenities";
 import { OpeningHours } from "./OpeningHours";
 import { VaryingOpeninghours } from "./VaryingOpeningHours";
+import { Reviews } from "./Reviews";
 
 export function ViewGym() {
   const params = useParams();
@@ -30,6 +31,8 @@ export function ViewGym() {
             <OpeningHours currentGym={currentGym} />
           )}
         </div>
+        <br />
+        <Reviews currentGym={currentGym} />
       </>
     );
   }

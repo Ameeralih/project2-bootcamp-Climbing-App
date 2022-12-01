@@ -2,7 +2,7 @@ export function VaryingOpeninghours({ currentGym }) {
   return (
     <>
       <div>
-        Opening hours(playzone):
+        Opening Hours(Play Zone):
         <br />
         Monday: {currentGym.hours.playzone[0]}
         <br />
@@ -21,7 +21,7 @@ export function VaryingOpeninghours({ currentGym }) {
       <br />
       <br />
       <div>
-        Opening hours(playzone):
+        Opening Hours(Boulder Zone):
         <br />
         Monday: {currentGym.hours.boulderzone[0]}
         <br />
