@@ -6,6 +6,7 @@ import { GymSearch } from "./components/GymSearch";
 import { GymHomePage } from "./components/GymHomePage";
 import { ViewGym } from "./components/ViewGym";
 import { GymList } from "./components/GymList";
+import "bootstrap/dist/css/bootstrap.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

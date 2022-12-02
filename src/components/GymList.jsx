@@ -1,7 +1,6 @@
 import { fetchGyms } from "../gymdata";
 import { Link, useSearchParams } from "react-router-dom";
 import Card from "react-bootstrap/Card";
-import "bootstrap/dist/css/bootstrap.css";
 
 export function GymList() {
   const gyms = fetchGyms();
