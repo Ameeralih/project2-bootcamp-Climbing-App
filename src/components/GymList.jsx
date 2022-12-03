@@ -1,6 +1,8 @@
 import { fetchGyms } from "../gymdata";
 import { Link, useSearchParams } from "react-router-dom";
 import Card from "react-bootstrap/Card";
+import { Paper } from "@mui/material";
+import "../App.css";
 
 export function GymList() {
   const gyms = fetchGyms();
@@ -36,12 +38,9 @@ export function GymList() {
         .map((gym) => (
           <>
             <Link to={gym.slug}>
-              <Card style={{ width: "18rem" }}>
-                <Card.Body>
-                  <Card.Title>{gym.name}</Card.Title>
-                  <Card.Text>{gym.contact}</Card.Text>
-                </Card.Body>
-              </Card>
+              <Paper elevation={4} square={false} variant="elevation">
+                {gym.name}
+              </Paper>
             </Link>
             <br />
           </>

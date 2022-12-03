@@ -7,3 +7,17 @@
   /* justify-content: center; */
   color: rgb(0, 0, 0);
 }
+
+/* .Gymcard {
+  padding: 12px;
+  min-width: 220px;
+} */
+
+.MuiPaper-root {
+  padding: 12px;
+  min-width: 220px;
+}
+
+.Bottom-navigation-paper {
+  padding: 0px;
+}

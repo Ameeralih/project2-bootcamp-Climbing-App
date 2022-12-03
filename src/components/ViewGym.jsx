@@ -33,6 +33,8 @@ export function ViewGym() {
         </div>
         <br />
         <Reviews currentGym={currentGym} />
+        <br />
+        <br />
       </>
     );
   }
