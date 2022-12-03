@@ -1,16 +1,9 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import search from "../images/search.png";
-import profile from "../images/profile.png";
 import { Paper } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import PersonIcon from "@mui/icons-material/Person";
 import { BottomNavigation } from "@mui/material";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 export const NavBarBottom = () => {

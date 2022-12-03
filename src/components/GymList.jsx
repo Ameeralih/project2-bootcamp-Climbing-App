@@ -1,6 +1,5 @@
 import { fetchGyms } from "../gymdata";
 import { Link, useSearchParams } from "react-router-dom";
-import Card from "react-bootstrap/Card";
 import { Paper } from "@mui/material";
 import "../App.css";
 

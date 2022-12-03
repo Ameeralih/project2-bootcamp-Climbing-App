@@ -1,19 +1,22 @@
 import React, { useState } from "react";
-import { createNewUser } from "../firebase/auth";
+import { signInUser } from "../firebase/auth";
 
-export const AuthCreate = () => {
+export const AuthLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const handleAuthCreate = (e) => {
+
+  const handleAuthSignIn = (e) => {
     e.preventDefault();
-    createNewUser(email, password);
+    signInUser(email, password);
   };
 
   return (
     <div>
       <h1>Hello</h1>
-      <form onSubmit={handleAuthCreate}>
-        <input onChange={(e) => setEmail(e.target.value)}>Email</input>
+      <form onSubmit={handleAuthSignIn}>
+        <input name="email" onChange={(e) => setEmail(e.target.value)}>
+          Email
+        </input>
         <input type="password" onChange={(e) => setPassword(e.target.value)}>
           Password
         </input>
