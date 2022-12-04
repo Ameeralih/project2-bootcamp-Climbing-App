@@ -2,6 +2,7 @@ import { fetchGyms } from "../gymdata";
 import { Link, useSearchParams } from "react-router-dom";
 import { Paper } from "@mui/material";
 import "../App.css";
+import { MapsAPI } from "./MapsAPI";
 
 export function GymList() {
   const gyms = fetchGyms();
@@ -44,6 +45,7 @@ export function GymList() {
             <br />
           </>
         ))}
+      {/* <MapsAPI /> */}
       <br />
       <br />
       <br />
