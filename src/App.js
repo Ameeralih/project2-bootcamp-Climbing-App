@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { GymSearch } from "./components/GymSearch";
@@ -6,16 +6,34 @@ import { GymHomePage } from "./components/GymHomePage";
 import { ViewGym } from "./components/ViewGym";
 import { GymList } from "./components/GymList";
 import { AuthLogin } from "./auth/AuthLogin";
+import { AuthCreate } from "./auth/AuthCreate";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "./firebase/auth";
 
 function App() {
+  const [user, setUser] = useState(null);
+  console.log(user);
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUser(user);
+      } else {
+        setUser(null);
+      }
+    });
+  }, []);
+
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/auth/create" element={<AuthLogin />} />
-        <Route path="/" element={<GymHomePage />}>
-          <Route path="/gyms" element={<GymSearch />}>
-            <Route index element={<GymList />} />
-            <Route path=":slug" element={<ViewGym />} />
+        <Route path="/create" element={<AuthCreate />} />
+        <Route path="/login" element={<AuthLogin />} />
+
+        <Route path="/" element={<GymHomePage user={user} />}>
+          <Route path="/gyms" element={<GymSearch user={user} />}>
+            <Route index element={<GymList user={user} />} />
+            <Route path=":slug" element={<ViewGym user={user} />} />
           </Route>
           <Route
             path="*"

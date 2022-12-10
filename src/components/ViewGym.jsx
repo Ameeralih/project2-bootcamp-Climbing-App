@@ -11,6 +11,8 @@ export function ViewGym() {
   if (currentGym) {
     return (
       <>
+        <br />
+        <br />
         <h1>{currentGym.name}</h1>
         <div style={{ border: "solid 1px", height: "300px" }}>
           <h4>Gym Location (Insert Google Map)</h4>
@@ -24,7 +26,6 @@ export function ViewGym() {
         <GymAmenities currentGym={currentGym} />
         <br />
         <div>
-          Opening Hours:{" "}
           {currentGym.slug === "bff-bukit-timah" ? (
             <VaryingOpeninghours currentGym={currentGym} />
           ) : (
