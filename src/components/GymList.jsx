@@ -1,15 +1,21 @@
 import { fetchGyms } from "../gymdata";
-import { Link, useSearchParams } from "react-router-dom";
-import Card from "react-bootstrap/Card";
+import { Link, useSearchParams, useNavigate } from "react-router-dom";
 import { Paper } from "@mui/material";
 import "../App.css";
+import { useEffect } from "react";
 
-export function GymList() {
+export function GymList({ user }) {
   const gyms = fetchGyms();
   let [searchParams, setSearchParams] = useSearchParams();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!user) navigate("/login");
+  }, [user]);
 
   return (
     <>
+      <br />
       <br />
       <br />
       <label>
@@ -38,7 +44,12 @@ export function GymList() {
         .map((gym) => (
           <>
             <Link to={gym.slug}>
-              <Paper elevation={4} square={false} variant="elevation">
+              <Paper
+                elevation={4}
+                key={gym.name}
+                square={false}
+                variant="elevation"
+              >
                 {gym.name}
               </Paper>
             </Link>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { createNewUser } from "../firebase/auth";
+import { signInUser } from "../firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -15,18 +15,20 @@ const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
 
-export function AuthCreate() {
+export function AuthLogin() {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  const handleCreateNewUser = (e) => {
+  const handleSignIn = (e) => {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
-    createNewUser(data.get("email"), data.get("password"))
+    signInUser(data.get("email"), data.get("password"))
       .then(() => {
-        navigate("/login");
+        navigate("/gyms");
       })
-      .catch(({ message }) => setError(message));
+      .catch(({ message }) => {
+        setError(message);
+      });
   };
 
   return (
@@ -43,13 +45,14 @@ export function AuthCreate() {
         >
           <Box
             component="form"
-            onSubmit={handleCreateNewUser}
+            onSubmit={handleSignIn}
             noValidate
             sx={{ mt: 1 }}
           >
             <Typography component="h1" variant="h5">
-              Create Your Account!
+              Welcome Back to Climb Finder!
             </Typography>
+
             <TextField
               margin="normal"
               required
@@ -76,10 +79,10 @@ export function AuthCreate() {
               variant="contained"
               sx={{ mt: 3, mb: 3 }}
             >
-              Submit
+              Sign In
             </Button>
             <Typography>
-              Already have an account? <Link to="/login">Login Here</Link>
+              New Here? <Link to="/create">Create an account now!</Link>
             </Typography>
           </Box>
           {error && <Alert severity="error">{error}</Alert>}

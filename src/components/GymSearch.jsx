@@ -1,6 +1,16 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Outlet, useNavigate } from "react-router-dom";
 
-export function GymSearch() {
-  return <Outlet />;
+export function GymSearch({ user }) {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!user) navigate("/login");
+  }, [user]);
+
+  return (
+    <div>
+      <Outlet />
+    </div>
+  );
 }

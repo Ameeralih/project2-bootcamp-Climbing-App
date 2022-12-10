@@ -1,3 +1,5 @@
+import { firebaseApp } from "./config";
+
 import {
   getAuth,
   signOut,

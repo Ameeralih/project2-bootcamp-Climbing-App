@@ -1,21 +1,16 @@
-import React from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import search from "../images/search.png";
-import profile from "../images/profile.png";
+import React, { useState } from "react";
 import { Paper } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import PersonIcon from "@mui/icons-material/Person";
+import LogoutIcon from "@mui/icons-material/Logout";
 import { BottomNavigation } from "@mui/material";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { signOutUser } from "../firebase/auth";
 
 export const NavBarBottom = () => {
   let navigate = useNavigate();
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = useState(0);
   return (
     <Paper
       sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }}
@@ -39,6 +34,12 @@ export const NavBarBottom = () => {
           label="Profile"
           icon={<PersonIcon />}
           value="/profile"
+        />
+        <BottomNavigationAction
+          label="Log Out"
+          icon={<LogoutIcon />}
+          onClick={signOutUser}
+          value="/login"
         />
       </BottomNavigation>
     </Paper>
