@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export const Reviews = ({ currentGym }) => {
-  const [reviews, setReviews] = useState([]);
+  const [reviews, setReviews] = useState(["good gym"]);
 
   const allReviews = reviews.map((review) => {
     return <div>{review}</div>;

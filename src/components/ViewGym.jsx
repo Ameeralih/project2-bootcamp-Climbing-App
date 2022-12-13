@@ -10,7 +10,7 @@ export function ViewGym() {
   const currentGym = fetchGyms().find((gym) => gym.slug === params.slug);
   if (currentGym) {
     return (
-      <>
+      <div className="viewGym">
         <br />
         <br />
         <h1>{currentGym.name}</h1>
@@ -36,7 +36,7 @@ export function ViewGym() {
         <Reviews currentGym={currentGym} />
         <br />
         <br />
-      </>
+      </div>
     );
   }
 }

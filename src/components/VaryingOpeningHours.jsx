@@ -19,7 +19,6 @@ export function VaryingOpeninghours({ currentGym }) {
         Sunday:{currentGym.hours.playzone[6]}
       </div>
       <br />
-      <br />
       <div>
         Opening Hours(Boulder Zone):
         <br />

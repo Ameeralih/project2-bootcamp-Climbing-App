@@ -21,6 +21,7 @@ export const gymData = [
       "930am-1045pm",
       "930am-1045pm",
     ],
+    reviews: [],
     slug: "bff-bendemeer",
   },
   {
@@ -56,6 +57,7 @@ export const gymData = [
         "7:30am-10:45pm",
       ],
     },
+    reviews: [],
     slug: "bff-bukit-timah",
   },
   {
@@ -80,6 +82,7 @@ export const gymData = [
       "10am-6pm",
       "10am-6pm",
     ],
+    reviews: [],
     slug: "z-vertigo",
   },
   {
@@ -104,6 +107,7 @@ export const gymData = [
       "10am-7pm",
       "10am-7pm",
     ],
+    reviews: [],
     slug: "oyeyo",
   },
   {
@@ -128,6 +132,7 @@ export const gymData = [
       "10am-9pm",
       "10am-9pm",
     ],
+    reviews: [],
     slug: "boulder-planet-sembawang",
   },
   {
@@ -152,6 +157,7 @@ export const gymData = [
       "10am-9pm",
       "10am-9pm",
     ],
+    reviews: [],
     slug: "boulder-planet-tai-seng",
   },
   {
@@ -176,7 +182,7 @@ export const gymData = [
       "8am-8pm",
       "8am-8pm",
     ],
-
+    reviews: [],
     slug: "boulderplus-chevrons",
   },
   {
@@ -201,6 +207,7 @@ export const gymData = [
       "8am-5:30pm",
       "8am-8pm",
     ],
+    reviews: [],
     slug: "boulderplus-aperia",
   },
   {
@@ -225,7 +232,7 @@ export const gymData = [
       "9am-9pm",
       "9am-9pm",
     ],
-
+    reviews: [],
     slug: "climbcentral-sports-hub",
   },
   {
@@ -250,6 +257,7 @@ export const gymData = [
       "9am-9pm",
       "9am-9pm",
     ],
+    reviews: [],
     slug: "climbcentral-novena",
   },
   {
@@ -274,6 +282,7 @@ export const gymData = [
       "9am-9pm",
       "9am-9pm",
     ],
+    reviews: [],
     slug: "climbcentral-funan",
   },
   {
@@ -298,6 +307,7 @@ export const gymData = [
       "9am-9pm",
       "9am-9pm",
     ],
+    reviews: [],
     slug: "climbcentral-katong",
   },
   {
@@ -322,6 +332,7 @@ export const gymData = [
       "9am-9pm",
       "9am-9pm",
     ],
+    reviews: [],
     slug: "the-rock-school",
   },
   {
@@ -346,7 +357,7 @@ export const gymData = [
       "10am-6pm",
       "10am-10pm",
     ],
-
+    reviews: [],
     slug: "b8a",
   },
   {
@@ -371,6 +382,7 @@ export const gymData = [
       "10am-10pm",
       "10am-10pm",
     ],
+    reviews: [],
     slug: "ark-bloc",
   },
   {
@@ -396,6 +408,7 @@ export const gymData = [
       "10am-10pm",
       "10am-10pm",
     ],
+    reviews: [],
     slug: "boulder-movement-suntec",
   },
   {
@@ -420,6 +433,7 @@ export const gymData = [
       "10am-10pm",
       "10am-10pm",
     ],
+    reviews: [],
     slug: "boulder-movement-bugis",
   },
   {
@@ -444,6 +458,7 @@ export const gymData = [
       "10am-10pm",
       "10am-10pm",
     ],
+    reviews: [],
     slug: "boulder-movement-downtown",
   },
   {
@@ -468,6 +483,7 @@ export const gymData = [
       "10am-10pm",
       "10am-10pm",
     ],
+    reviews: [],
     slug: "boulder-movement-rochor",
   },
 
@@ -493,6 +509,7 @@ export const gymData = [
       "10am-10pm",
       "10am-10pm",
     ],
+    reviews: [],
     slug: "boulder-movement-tai-seng",
   },
   {
@@ -517,6 +534,7 @@ export const gymData = [
       "10am-7pm",
       "10am-7pm",
     ],
+    reviews: [],
     slug: "kinetics",
   },
   {
@@ -541,6 +559,7 @@ export const gymData = [
       "10am-9pm",
       "10am-9pm",
     ],
+    reviews: [],
     slug: "ground-up",
   },
   {
@@ -565,6 +584,7 @@ export const gymData = [
       "9:30am-10pm",
       "9:30am-10pm",
     ],
+    reviews: [],
     slug: "fit-bloc-kentridge",
   },
   {
@@ -589,6 +609,7 @@ export const gymData = [
       "9:30am-10pm",
       "9:30am-10pm",
     ],
+    reviews: [],
     slug: "fit-bloc-depotheights",
   },
   {
@@ -613,6 +634,7 @@ export const gymData = [
       "9:30am-10pm",
       "9:30am-10pm",
     ],
+    reviews: [],
     slug: "arete",
   },
   {
@@ -637,6 +659,7 @@ export const gymData = [
       "9:30am-9:15pm",
       "9:30am-9:15pm",
     ],
+    reviews: [],
     slug: "lighthouse",
   },
   {
@@ -661,6 +684,7 @@ export const gymData = [
       "10:30am-1:30pm",
       "Closed",
     ],
+    reviews: [],
     slug: "project-send",
   },
   {
@@ -685,7 +709,33 @@ export const gymData = [
       "8:30am-8pm",
       "8:30am-8pm",
     ],
+    reviews: [],
     slug: "t-hall",
+  },
+  {
+    name: "Boruda",
+    address: "991A Alexandra Road #02-06/07",
+    postal: "119969",
+    contact: "6994 2325",
+    website: "https://www.boruda.sg/",
+    bouldering: true,
+    autobelay: false,
+    toprope: false,
+    lead: false,
+    shower: "?",
+    watercooler: false,
+    ac: true,
+    hours: [
+      "1:30pm-10:30pm",
+      "11:30am-10:30pm",
+      "11:30am-10:30pm",
+      "11:30am-10:30pm",
+      "11:30am-10:30pm",
+      "9am-9pm",
+      "9am-9pm",
+    ],
+    reviews: [],
+    slug: "boruda",
   },
 ];
 

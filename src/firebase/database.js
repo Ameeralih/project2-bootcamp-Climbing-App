@@ -1,6 +1,6 @@
-import { getDatabase, ref } from "firebase/database";
-import { gymData } from "../gymdata";
+import { firebaseApp } from "./config";
+import { getDatabase, ref, set } from "firebase/database";
+import { fetchGyms } from "../gymdata";
 
+const GYMS_KEY = "gyms";
 const database = getDatabase(firebaseApp);
-const databaseRef = ref(database);
-const GYMS_KEY = "Gyms";
