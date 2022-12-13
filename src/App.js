@@ -9,6 +9,7 @@ import { AuthLogin } from "./auth/AuthLogin";
 import { AuthCreate } from "./auth/AuthCreate";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./firebase/auth";
+import { Profile } from "./components/Profile";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -34,6 +35,7 @@ function App() {
             <Route index element={<GymList user={user} />} />
             <Route path=":slug" element={<ViewGym user={user} />} />
           </Route>
+          <Route path="profile" element={<Profile user={user} />} />
           <Route
             path="*"
             element={

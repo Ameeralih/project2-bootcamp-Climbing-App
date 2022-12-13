@@ -5,7 +5,7 @@ import { OpeningHours } from "./OpeningHours";
 import { VaryingOpeninghours } from "./VaryingOpeningHours";
 import { Reviews } from "./Reviews";
 
-export function ViewGym() {
+export function ViewGym({ user }) {
   const params = useParams();
   const currentGym = fetchGyms().find((gym) => gym.slug === params.slug);
   if (currentGym) {
@@ -33,7 +33,7 @@ export function ViewGym() {
           )}
         </div>
         <br />
-        <Reviews currentGym={currentGym} />
+        <Reviews currentGym={currentGym} user={user} />
         <br />
         <br />
       </div>
