@@ -9,6 +9,8 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import MuiAlert from "@mui/material/Alert";
+import { set } from "firebase/database";
+import { usersRef } from "../firebase/database";
 
 const theme = createTheme();
 const Alert = React.forwardRef(function Alert(props, ref) {
@@ -23,10 +25,18 @@ export function AuthCreate() {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
     createNewUser(data.get("email"), data.get("password"))
-      .then(() => {
+      .then(({ user }) => {
+        set(usersRef, {
+          UID: user.uid,
+          email: user.email,
+          favouriteGyms: [],
+        });
         navigate("/login");
       })
-      .catch(({ message }) => setError(message));
+      .catch(({ message }) => {
+        console.log(error);
+        setError(message);
+      });
   };
 
   return (

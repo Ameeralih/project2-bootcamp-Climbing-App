@@ -4,6 +4,9 @@ import MuiAlert from "@mui/material/Alert";
 import { useNavigate } from "react-router-dom";
 import { storage } from "../firebase/storage";
 import { uploadBytes, ref, getDownloadURL } from "firebase/storage";
+import Button from "@mui/material/Button";
+import TextField from "@mui/material/TextField";
+import { deleteUser } from "firebase/auth";
 
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -21,6 +24,12 @@ export function Profile({ user }) {
     uploadBytes(userProfileRef, file).then(() =>
       getDownloadURL(userProfileRef).then((url) => setAvatar(url))
     );
+  };
+
+  const handleDeleteUser = (user) => {
+    deleteUser(user)
+      .catch(<Alert severity="error">unsuccessful</Alert>)
+      .then(navigate("/login"));
   };
 
   const [avatar, setAvatar] = useState("");
@@ -47,8 +56,33 @@ export function Profile({ user }) {
       </form>
 
       <h1>Hello There!</h1>
-      <h3>Name:</h3>
-      <h3>Email: {user.email}</h3>
+      <div>
+        Name:
+        <TextField
+          id="outlined-basic"
+          size="small"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          variant="outlined"
+        />
+      </div>
+      <div>
+        Email:{" "}
+        <TextField
+          id="outlined-basic"
+          size="small"
+          value={user.email}
+          onChange={(e) => setName(e.target.value)}
+          variant="outlined"
+        />
+      </div>
+      <Button
+        variant="outlined"
+        color="error"
+        onClick={() => handleDeleteUser(user)}
+      >
+        Delete Account
+      </Button>
       <h1 style={{ fontSize: "5px" }}>Unique User ID: {user.uid}</h1>
       {!user.displayName && (
         <Alert severity="info">Please Complete Your Profile</Alert>
