@@ -1,6 +1,8 @@
+import { firebaseApp } from "./config";
 import { getDatabase, ref } from "firebase/database";
-import { gymData } from "../gymdata";
 
-const database = getDatabase(firebaseApp);
-const databaseRef = ref(database);
-const GYMS_KEY = "Gyms";
+export const database = getDatabase(firebaseApp);
+
+export const usersRef = ref(database, "users/");
+
+export const gymsRef = ref(database, "gyms/");

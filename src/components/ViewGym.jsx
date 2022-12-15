@@ -5,12 +5,14 @@ import { OpeningHours } from "./OpeningHours";
 import { VaryingOpeninghours } from "./VaryingOpeningHours";
 import { Reviews } from "./Reviews";
 
-export function ViewGym() {
+export function ViewGym({ user }) {
   const params = useParams();
   const currentGym = fetchGyms().find((gym) => gym.slug === params.slug);
   if (currentGym) {
     return (
-      <>
+      <div className="viewGym">
+        <br />
+        <br />
         <h1>{currentGym.name}</h1>
         <div style={{ border: "solid 1px", height: "300px" }}>
           <h4>Gym Location (Insert Google Map)</h4>
@@ -24,7 +26,6 @@ export function ViewGym() {
         <GymAmenities currentGym={currentGym} />
         <br />
         <div>
-          Opening Hours:{" "}
           {currentGym.slug === "bff-bukit-timah" ? (
             <VaryingOpeninghours currentGym={currentGym} />
           ) : (
@@ -32,10 +33,10 @@ export function ViewGym() {
           )}
         </div>
         <br />
-        <Reviews currentGym={currentGym} />
+        <Reviews currentGym={currentGym} user={user} />
         <br />
         <br />
-      </>
+      </div>
     );
   }
 }
