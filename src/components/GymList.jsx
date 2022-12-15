@@ -1,7 +1,7 @@
 import { fetchGyms } from "../gymdata";
 import { Link, useSearchParams, useNavigate } from "react-router-dom";
 import { Paper } from "@mui/material";
-import "../App.css";
+import "../css/App.css";
 import { useEffect } from "react";
 
 export function GymList({ user }) {

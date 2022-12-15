@@ -9,6 +9,7 @@ import TextField from "@mui/material/TextField";
 import { deleteUser } from "firebase/auth";
 import Box from "@mui/material/Box";
 import { updateProfile, updateEmail } from "firebase/auth";
+import "../css/Profile.css";
 
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -19,7 +20,7 @@ export function Profile({ user }) {
   const navigate = useNavigate();
   useEffect(() => {
     if (!user) navigate("/login");
-  });
+  }, [user]);
 
   const updateProfilePic = (e) => {
     e.preventDefault();
@@ -31,7 +32,7 @@ export function Profile({ user }) {
 
   const handleDeleteUser = (user) => {
     deleteUser(user)
-      .catch(<Alert severity="error">unsuccessful</Alert>)
+      .catch(<Alert severity="error">Unsuccessful</Alert>)
       .then(navigate("/login"));
   };
 
@@ -63,37 +64,42 @@ export function Profile({ user }) {
         sx={{ width: 56, height: 56 }}
         src={avatar}
       ></Avatar>
-      <form onSubmit={updateProfilePic}>
-        <input type="file" onChange={(e) => setFile(e.target.files[0])} />
-        <button type="submit">
+      <form className="avatarform" onSubmit={updateProfilePic}>
+        <input
+          className="file"
+          type="file"
+          onChange={(e) => setFile(e.target.files[0])}
+        />
+        <button className="avatarsubmit" type="submit">
           {!avatar && "Confirm"}
           {avatar && "Edit"}
         </button>
         {avatar && <button onClick={() => setAvatar("")}>Delete</button>}
       </form>
-
-      <h1>Hello There {user.displayName && name}!</h1>
-      <Box component="form" onSubmit={handleUpdate}>
-        Name:
-        <TextField
-          id="outlined-basic"
-          size="small"
-          name="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          variant="outlined"
-        />
-        Email:{" "}
-        <TextField
-          id="outlined-basic"
-          size="small"
-          name="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          variant="outlined"
-        />
-        <button type="submit">Update</button>
-      </Box>
+      <div className="userinfo">
+        <h1 className="greeting">Hello There {user.displayName && name}!</h1>
+        <Box className="userfields" component="form" onSubmit={handleUpdate}>
+          Name:
+          <TextField
+            id="outlined-basic"
+            size="small"
+            name="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            variant="outlined"
+          />
+          Email:{" "}
+          <TextField
+            id="outlined-basic"
+            size="small"
+            name="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            variant="outlined"
+          />
+          <button type="submit">Update</button>
+        </Box>
+      </div>
 
       <br />
       <br />

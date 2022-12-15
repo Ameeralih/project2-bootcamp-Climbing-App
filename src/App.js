@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./App.css";
+import "./css/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { GymSearch } from "./components/GymSearch";
 import { GymHomePage } from "./components/GymHomePage";
@@ -35,7 +35,7 @@ function App() {
             <Route index element={<GymList user={user} />} />
             <Route path=":slug" element={<ViewGym user={user} />} />
           </Route>
-          <Route path="profile" element={<Profile user={user} />} />
+          <Route path="/profile" element={<Profile user={user} />} />
           <Route
             path="*"
             element={

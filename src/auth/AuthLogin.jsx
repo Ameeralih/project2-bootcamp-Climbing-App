@@ -24,7 +24,7 @@ export function AuthLogin() {
     const data = new FormData(e.currentTarget);
     signInUser(data.get("email"), data.get("password"))
       .then(() => {
-        navigate("/profile");
+        navigate("/gyms");
       })
       .catch(({ message }) => {
         setError(message);

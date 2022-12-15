@@ -1,9 +1,8 @@
 import React, { useState } from "react";
+import { ReviewForm } from "./ReviewForm";
 
 export const Reviews = ({ currentGym, user }) => {
   const [reviews, setReviews] = useState([]);
-  const GYM_KEY = currentGym.name;
-  console.log(user.uid);
 
   const allReviews = reviews.map((review) => {
     return <div>{review}</div>;
@@ -14,7 +13,7 @@ export const Reviews = ({ currentGym, user }) => {
       {currentGym.name} reviews:
       <br />
       {allReviews}
-      <button>Add a review</button>
+      <ReviewForm currentGym={currentGym} user={user} />
     </div>
   );
 };

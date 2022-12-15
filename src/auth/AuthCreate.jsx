@@ -34,7 +34,6 @@ export function AuthCreate() {
         navigate("/login");
       })
       .catch(({ message }) => {
-        console.log(error);
         setError(message);
       });
   };
