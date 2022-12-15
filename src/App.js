@@ -5,13 +5,13 @@ import { GymSearch } from "./components/GymSearch";
 import { GymHomePage } from "./components/GymHomePage";
 import { ViewGym } from "./components/ViewGym";
 import { GymList } from "./components/GymList";
-import { AuthLogin } from "./auth/AuthLogin";
+// import { AuthLogin } from "./auth/AuthLogin";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/auth/create" element={<AuthLogin />} />
+        {/* <Route path="/auth/create" element={<AuthLogin />} /> */}
         <Route path="/" element={<GymHomePage />}>
           <Route path="/gyms" element={<GymSearch />}>
             <Route index element={<GymList />} />

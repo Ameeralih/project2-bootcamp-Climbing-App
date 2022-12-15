@@ -2,6 +2,7 @@ export const gymData = [
   {
     name: "BFF(Bendemeer)",
     address: "2 Kallang Ave, #01-20 CT hub",
+    latlong: [1.3122953786828546, 103.86319363195689],
     postal: "339407",
     contact: "9649 4145",
     website: "https://www.bffclimb.com",
@@ -26,6 +27,7 @@ export const gymData = [
   {
     name: "BFF(Bukit Timah)",
     address: "896 Dunearn Rd, #02-01D",
+    latlong: [1.3367716661380922, 103.78369891878091],
     postal: "589472",
     contact: "8368 9214",
     website: "https://www.bffclimb.com",
@@ -61,6 +63,7 @@ export const gymData = [
   {
     name: "Z-Vertigo",
     address: "170 Upper Bukit Timah Rd, #B2-20B",
+    latlong: [1.3430706470380076, 103.7760164863529],
     postal: "588179",
     contact: null,
     website: "https://zvertigobouldergym.wixsite.com/zvert",
@@ -85,6 +88,7 @@ export const gymData = [
   {
     name: "OYEYO",
     address: "148 Mackenzie Rd",
+    latlong: [1.3072401478887619, 103.84677261937478],
     postal: "228724",
     contact: "69962095",
     website: "https://oyeyoboulderhome.com/",
@@ -109,6 +113,7 @@ export const gymData = [
   {
     name: "Boulder Planet (Sembawang)",
     address: " 604 Sembawang Rd, #B1-22/23 Sembawang Shopping Centre",
+    latlong: [1.4421140269410468, 103.82503551342097],
     postal: "758459",
     contact: "94692386",
     website: "https://www.boulderplanet.sg/",
@@ -133,6 +138,7 @@ export const gymData = [
   {
     name: "Boulder Planet (Tai Seng)",
     address: "601 MacPherson Rd, #02-07 Grantral Mall @ MacPherson",
+    latlong: [1.3339763980451174, 103.88837939991178],
     postal: "368242",
     contact: "94692386",
     website: "https://www.boulderplanet.sg/",
@@ -157,6 +163,7 @@ export const gymData = [
   {
     name: "Boulder+ (Chevrons)",
     address: "48 Boon Lay Way, #04-01 The Chevrons",
+    latlong: [1.331043216528296, 103.74829243633198],
     postal: "609961",
     contact: "69700116",
     website: "https://www.boulderplusclimbing.com/",
@@ -182,6 +189,7 @@ export const gymData = [
   {
     name: "Boulder+ (Aperia)",
     address: "12 Kallang Ave, #03-17 The Aperia Mall",
+    latlong: [1.3099077898694325, 103.86418318248973],
     postal: "339511",
     contact: "62827530",
     website: "https://www.boulderplusclimbing.com/",
@@ -206,6 +214,7 @@ export const gymData = [
   {
     name: "Climb Central Sports Hub",
     address: "12 Kallang Ave, #03-17 The Aperia Mall",
+    latlong: [1.3027057771199873, 103.87351992433487],
     postal: "397628",
     contact: "67027972",
     website: "https://www.climbcentral.sg/",
@@ -231,6 +240,7 @@ export const gymData = [
   {
     name: "Climb Central Novena",
     address: "238 Thomson Rd, #03-23/25",
+    latlong: [1.3205138599911643, 103.84379839144358],
     postal: "307683",
     contact: "63536885",
     website: "https://www.climbcentral.sg/",
@@ -255,6 +265,7 @@ export const gymData = [
   {
     name: "Climb Central Funan",
     address: "107 North Bridge Rd, #B2-19/21 Funan",
+    latlong: [1.2911345305626962, 103.85015118280326],
     postal: "179105",
     contact: "69063918",
     website: "https://www.climbcentral.sg/",
@@ -279,6 +290,7 @@ export const gymData = [
   {
     name: "Climb Central Katong",
     address: "E Coast Rd, #04-01/02 112",
+    latlong: [1.3051981117392477, 103.90506166261133],
     postal: "428802",
     contact: "69900702",
     website: "https://www.climbcentral.sg/",
@@ -303,6 +315,7 @@ export const gymData = [
   {
     name: "The Rock School",
     address: "Our Tampines Hub, 1 Tampines Walk, #02-81",
+    latlong: [1.3539773980448708, 103.94027351333322],
     postal: "528523",
     contact: "9635 3488",
     website: "https://www.therockschool.sg/",
@@ -327,6 +340,7 @@ export const gymData = [
   {
     name: "b8A",
     address: "03-06, 6 Tampines Street 92, yo:HA Commercial @ Tampines",
+    latlong: [1.343413698059504, 103.94151771332625],
     postal: "528893",
     contact: "8023 8313",
     website: "https://www.b8a.sg/",
@@ -352,6 +366,7 @@ export const gymData = [
   {
     name: "Ark Bloc",
     address: "6 Tebing Ln, #01-05",
+    latlong: [1.3921602493453027, 103.9164060133472],
     postal: "828835",
     contact: "80221480",
     website: "https://arkbloc.com/",
@@ -377,6 +392,7 @@ export const gymData = [
     name: "Boulder Movement (Suntec)",
     address:
       "3 Temasek Boulevard 01-484/485/486 Suntec City Mall, North Wing, Tower One",
+    latlong: [1.2960843575384384, 103.85844843657266],
     postal: "038983",
     contact: "69939702",
     website: "https://www.boulderm.com/",
@@ -401,6 +417,7 @@ export const gymData = [
   {
     name: "Boulder Movement (Bugis+)",
     address: " 201 Victoria St, #05 - 07",
+    latlong: [1.2993739752437232, 103.85424967680922],
     postal: "188067",
     contact: "69939228",
     website: "https://www.boulderm.com/",
@@ -425,6 +442,7 @@ export const gymData = [
   {
     name: "Boulder Movement (Downtown)",
     address: "6A Shenton Way, #B1-03 Downtown Gallery",
+    latlong: [1.278109702839576, 103.84919827109306],
     postal: "068815",
     contact: "6816 6001",
     website: "https://www.boulderm.com/",
@@ -449,6 +467,7 @@ export const gymData = [
   {
     name: "Boulder Movement (Rochor)",
     address: "2 Serangoon Rd, #02-12 Tekka Place",
+    latlong: [1.305060530041883, 103.85142356279691],
     postal: "218227",
     contact: "6993 2100",
     website: "https://www.boulderm.com/",
@@ -474,6 +493,7 @@ export const gymData = [
   {
     name: "Boulder Movement (Tai Seng)",
     address: "18 Tai Seng St, #01-09",
+    latlong: [1.3364050233715377, 103.88833772540816],
     postal: "539775",
     contact: "6974 7769",
     website: "https://www.boulderm.com/",
@@ -498,6 +518,7 @@ export const gymData = [
   {
     name: "Kinetics",
     address: "511 Serangoon Rd",
+    latlong: [1.3146333735776634, 103.85735006300462],
     postal: "218153",
     contact: "62915045",
     website: "https://www.kineticsclimbing.com.sg/",
@@ -522,6 +543,7 @@ export const gymData = [
   {
     name: "Ground Up",
     address: "60 Tessensohn Road CSC@Tessensohn (Level 2)",
+    latlong: [1.3158300711352664, 103.85618373153159],
     postal: "217664",
     contact: "6292 7701",
     website: "https://www.groundupsg.com/",
@@ -546,6 +568,7 @@ export const gymData = [
   {
     name: "Fit Bloc (Kent Ridge)",
     address: "87 Science Park Dr, #03-02 The Oasis",
+    latlong: [1.2878163498640882, 103.7904886213928],
     postal: "118260",
     contact: "6612 2046",
     website: "https://fitbloc.com/",
@@ -570,6 +593,7 @@ export const gymData = [
   {
     name: "Fit Bloc (Depot Heights)",
     address: "108 Depot Rd, #02-01 Depot Heights Shopping Centre",
+    latlong: [1.2813020887064916, 103.81013041199431],
     postal: "100108",
     contact: "6252 9161",
     website: "https://fitbloc.com/",
@@ -594,6 +618,7 @@ export const gymData = [
   {
     name: "Arête (By Upwall)",
     address: "5 Changi Business Park Central 1, #02 14/15/16",
+    latlong: [1.335089853782533, 103.96357159662325],
     postal: "486038",
     contact: "8028 7028",
     website: "https://upwallclimbing.sg/",
@@ -618,6 +643,7 @@ export const gymData = [
   {
     name: "Lighthouse Climbing",
     address: "44 Pasir Panjang Road #B-02",
+    latlong: [1.2749811144570198, 103.79433757913479],
     postal: "118504",
     contact: "9724 4091",
     website: "https://www.lighthouseclimbing.com/",
@@ -642,6 +668,7 @@ export const gymData = [
   {
     name: "Project Send",
     address: "8 Raffles Ave., #02-29 Esplanade Mall",
+    latlong: [1.2889834458461398, 103.85599822813204],
     postal: "039802",
     contact: "8748 4998",
     website: "https://www.projectsend.co/",
@@ -666,6 +693,7 @@ export const gymData = [
   {
     name: "T-Hall",
     address: "464 Crawford Lane #01-464",
+    latlong: [1.3047458640352656, 103.862216106781],
     postal: "190464",
     contact: "9832 7656",
     website: "https://t-hall.sg/",

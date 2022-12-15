@@ -3,6 +3,7 @@ import { Link, useSearchParams } from "react-router-dom";
 import { Paper } from "@mui/material";
 import "../App.css";
 import { MapsAPI } from "./MapsAPI";
+import { Map } from "./MapsAPI";
 
 export function GymList() {
   const gyms = fetchGyms();
@@ -11,6 +12,7 @@ export function GymList() {
   return (
     <>
       <br />
+
       <br />
       <label>
         <b>Search:</b>
@@ -27,25 +29,27 @@ export function GymList() {
         }}
       />
       <br />
+      <MapsAPI />
       <br />
-      {gyms
-        .filter((gym) => {
-          let filter = searchParams.get("filter");
-          if (!filter) return true;
-          let name = gym.name.toLowerCase();
-          return name.startsWith(filter.toLowerCase());
-        })
-        .map((gym) => (
-          <>
-            <Link to={gym.slug}>
-              <Paper elevation={4} square={false} variant="elevation">
-                {gym.name}
-              </Paper>
-            </Link>
-            <br />
-          </>
-        ))}
-      {/* <MapsAPI /> */}
+      <ul style={{ listStyle: "none" }}>
+        {gyms
+          .filter((gym) => {
+            let filter = searchParams.get("filter");
+            if (!filter) return true;
+            let name = gym.name.toLowerCase();
+            return name.startsWith(filter.toLowerCase());
+          })
+          .map((gym) => (
+            <li key={gym.slug}>
+              <Link to={gym.slug}>
+                <Paper elevation={4} square={false} variant="elevation">
+                  {gym.name}
+                </Paper>
+              </Link>
+              <br />
+            </li>
+          ))}
+      </ul>
       <br />
       <br />
       <br />
