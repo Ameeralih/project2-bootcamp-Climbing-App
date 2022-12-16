@@ -41,7 +41,7 @@ function BasicModal({ currentGym, user }) {
       time: Date.now(),
     };
     const updates = {};
-    updates[`/gyms/${currentGym.name}/comments/${newCommentKey}`] = newComment;
+    updates[`/gyms/${currentGym.name}/${newCommentKey}`] = newComment;
     update(ref(database), updates)
       .catch(({ message }) => <Alert severity="error">{message}</Alert>)
       .then(() => {
