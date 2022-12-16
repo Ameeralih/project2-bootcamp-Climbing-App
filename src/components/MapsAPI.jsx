@@ -54,7 +54,8 @@ export function MapsAPI() {
   return <Map />;
 }
 
-function Search({ panTo }) {
+function Search({ panTo }, { createUserLocationMarker }) {
+  const [userLocationMarker, setUserLocationMarker] = React.useState(null);
   const [selected, setSelected] = React.useState(null);
   const {
     ready,
@@ -78,6 +79,7 @@ function Search({ panTo }) {
             const { lat, lng } = await getLatLng(results[0]);
             panTo({ lat, lng });
             userLocation = { latitude: lat, longitude: lng };
+            createUserLocationMarker({ lat, lng });
             const newGymsArray = gyms.map((gym) => ({
               ...gym,
               distance: getDistance(
@@ -123,9 +125,12 @@ function Search({ panTo }) {
 function Map() {
   let [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
+  const setUserLocationMarker = React.useCallback(({ lat, lng }) => {
+    mapRef.current.Marker({ lat, lng });
+  });
   const panTo = React.useCallback(({ lat, lng }) => {
     mapRef.current.panTo({ lat, lng });
-    mapRef.current.setZoom(15);
+    mapRef.current.setZoom(13);
   }, []);
   const [selected, setSelected] = React.useState(null);
   const mapRef = React.useRef();
@@ -134,7 +139,7 @@ function Map() {
   }, []);
   return (
     <>
-      <Search panTo={panTo} />
+      <Search panTo={panTo} setUserLocationMarker={setUserLocationMarker} />
       <GoogleMap
         zoom={11.5}
         center={centre}
