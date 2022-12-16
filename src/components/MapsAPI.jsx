@@ -196,6 +196,8 @@ function Map() {
                     square={false}
                     variant="elevation"
                   >
+                    <img width="70px" alt="Logo" src={gym.logoURL} /> &nbsp;
+                    &nbsp;
                     {gym.name}
                   </Paper>
                 </Link>

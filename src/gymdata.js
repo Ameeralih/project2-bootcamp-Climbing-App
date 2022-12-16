@@ -6,6 +6,8 @@ export const gymData = [
     postal: "339407",
     contact: "9649 4145",
     website: "https://www.bffclimb.com",
+    logoURL:
+      "https://bffclimb.com/wp-content/uploads/2019/11/BFF-Logo-Transparent-600x604.png",
     bouldering: true,
     autobelay: true,
     toprope: false,
@@ -32,6 +34,8 @@ export const gymData = [
     postal: "589472",
     contact: "8368 9214",
     website: "https://www.bffclimb.com",
+    logoURL:
+      "https://bffclimb.com/wp-content/uploads/2019/11/BFF-Logo-Transparent-600x604.png",
     bouldering: true,
     autobelay: true,
     toprope: false,
@@ -69,6 +73,8 @@ export const gymData = [
     postal: "588179",
     contact: null,
     website: "https://zvertigobouldergym.wixsite.com/zvert",
+    logoURL:
+      "https://static.wixstatic.com/media/711180_fd721b1e20cd4d59b294a81612f2fc13~mv2.png/v1/fill/w_103,h_121,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ZV_Logo-removebg-preview.png",
     bouldering: true,
     autobelay: false,
     toprope: false,
@@ -95,6 +101,8 @@ export const gymData = [
     postal: "228724",
     contact: "69962095",
     website: "https://oyeyoboulderhome.com/",
+    logoURL:
+      "https://cdn.shopify.com/s/files/1/0526/8321/0912/files/OYEYO_logo_landscape_18a27181-788e-41f9-bc06-ca357143d9f8_180x.png?v=1615323842",
     bouldering: true,
     autobelay: false,
     toprope: false,
@@ -121,6 +129,8 @@ export const gymData = [
     postal: "758459",
     contact: "94692386",
     website: "https://www.boulderplanet.sg/",
+    logoURL:
+      "https://static.wixstatic.com/media/8b92f2_22464fb50599426f9626c6bab0f2c78d~mv2.png/v1/fill/w_81,h_61,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8b92f2_22464fb50599426f9626c6bab0f2c78d~mv2.png",
     bouldering: true,
     autobelay: false,
     toprope: false,
@@ -147,6 +157,8 @@ export const gymData = [
     postal: "368242",
     contact: "94692386",
     website: "https://www.boulderplanet.sg/",
+    logoURL:
+      "https://static.wixstatic.com/media/8b92f2_22464fb50599426f9626c6bab0f2c78d~mv2.png/v1/fill/w_81,h_61,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8b92f2_22464fb50599426f9626c6bab0f2c78d~mv2.png",
     bouldering: true,
     autobelay: false,
     toprope: false,
@@ -173,6 +185,8 @@ export const gymData = [
     postal: "609961",
     contact: "69700116",
     website: "https://www.boulderplusclimbing.com/",
+    logoURL:
+      "https://scontent.fsin10-1.fna.fbcdn.net/v/t39.30808-6/298556559_505562444905064_2943248931061676068_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=6B-R99-n5Q8AX9gyMWB&_nc_ht=scontent.fsin10-1.fna&oh=00_AfBLPF8GQetXT7T6PceFUVJCXZOHsl2qsB8COy0GulCMbQ&oe=63A1CCF8",
     bouldering: true,
     autobelay: false,
     toprope: false,
@@ -199,6 +213,8 @@ export const gymData = [
     postal: "339511",
     contact: "62827530",
     website: "https://www.boulderplusclimbing.com/",
+    logoURL:
+      "https://scontent.fsin10-1.fna.fbcdn.net/v/t39.30808-6/298556559_505562444905064_2943248931061676068_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=6B-R99-n5Q8AX9gyMWB&_nc_ht=scontent.fsin10-1.fna&oh=00_AfBLPF8GQetXT7T6PceFUVJCXZOHsl2qsB8COy0GulCMbQ&oe=63A1CCF8",
     bouldering: true,
     autobelay: false,
     toprope: false,
@@ -225,6 +241,8 @@ export const gymData = [
     postal: "397628",
     contact: "67027972",
     website: "https://www.climbcentral.sg/",
+    logoURL:
+      "https://images.squarespace-cdn.com/content/v1/5f93a2d7758e71274f13910c/1605639905978-DNOA4NGK88AWKITLJF65/Asset+1.png",
     bouldering: true,
     autobelay: true,
     toprope: true,
@@ -251,6 +269,8 @@ export const gymData = [
     postal: "307683",
     contact: "63536885",
     website: "https://www.climbcentral.sg/",
+    logoURL:
+      "https://images.squarespace-cdn.com/content/v1/5f93a2d7758e71274f13910c/1605639905978-DNOA4NGK88AWKITLJF65/Asset+1.png",
     bouldering: "?",
     autobelay: "?",
     toprope: "?",
@@ -277,6 +297,8 @@ export const gymData = [
     postal: "179105",
     contact: "69063918",
     website: "https://www.climbcentral.sg/",
+    logoURL:
+      "https://images.squarespace-cdn.com/content/v1/5f93a2d7758e71274f13910c/1605639905978-DNOA4NGK88AWKITLJF65/Asset+1.png",
     bouldering: true,
     autobelay: true,
     toprope: true,
@@ -303,6 +325,8 @@ export const gymData = [
     postal: "428802",
     contact: "69900702",
     website: "https://www.climbcentral.sg/",
+    logoURL:
+      "https://images.squarespace-cdn.com/content/v1/5f93a2d7758e71274f13910c/1605639905978-DNOA4NGK88AWKITLJF65/Asset+1.png",
     bouldering: "?",
     autobelay: "?",
     toprope: "?",
@@ -329,6 +353,8 @@ export const gymData = [
     postal: "528523",
     contact: "9635 3488",
     website: "https://www.therockschool.sg/",
+    logoURL:
+      "https://www.therockschool.sg/wp-content/uploads/2021/04/header-logo-transparent.png",
     bouldering: true,
     autobelay: true,
     toprope: true,
@@ -355,6 +381,7 @@ export const gymData = [
     postal: "528893",
     contact: "8023 8313",
     website: "https://www.b8a.sg/",
+    logoURL: "https://www.b8a.sg/wp-content/uploads/2021/05/logo-small-1.svg",
     bouldering: true,
     autobelay: false,
     toprope: false,
@@ -381,6 +408,8 @@ export const gymData = [
     postal: "828835",
     contact: "80221480",
     website: "https://arkbloc.com/",
+    logoURL:
+      "https://arkbloc.com/wp-content/uploads/2022/05/ark-bloc-main-crimson-1.png",
     bouldering: true,
     autobelay: false,
     toprope: false,
@@ -408,6 +437,8 @@ export const gymData = [
     postal: "038983",
     contact: "69939702",
     website: "https://www.boulderm.com/",
+    logoURL:
+      "https://suntecproject.s3.amazonaws.com/BI/merchant/sponsore/mobile_large/8121-Boulder_Movement_for_Suntec-02.jpg",
     bouldering: true,
     autobelay: false,
     toprope: false,
@@ -434,6 +465,8 @@ export const gymData = [
     postal: "188067",
     contact: "69939228",
     website: "https://www.boulderm.com/",
+    logoURL:
+      "https://suntecproject.s3.amazonaws.com/BI/merchant/sponsore/mobile_large/8121-Boulder_Movement_for_Suntec-02.jpg",
     bouldering: true,
     autobelay: true,
     toprope: false,
@@ -460,6 +493,8 @@ export const gymData = [
     postal: "068815",
     contact: "6816 6001",
     website: "https://www.boulderm.com/",
+    logoURL:
+      "https://suntecproject.s3.amazonaws.com/BI/merchant/sponsore/mobile_large/8121-Boulder_Movement_for_Suntec-02.jpg",
     bouldering: true,
     autobelay: false,
     toprope: false,
@@ -486,6 +521,8 @@ export const gymData = [
     postal: "218227",
     contact: "6993 2100",
     website: "https://www.boulderm.com/",
+    logoURL:
+      "https://suntecproject.s3.amazonaws.com/BI/merchant/sponsore/mobile_large/8121-Boulder_Movement_for_Suntec-02.jpg",
     bouldering: true,
     autobelay: false,
     toprope: false,
@@ -513,6 +550,8 @@ export const gymData = [
     postal: "539775",
     contact: "6974 7769",
     website: "https://www.boulderm.com/",
+    logoURL:
+      "https://suntecproject.s3.amazonaws.com/BI/merchant/sponsore/mobile_large/8121-Boulder_Movement_for_Suntec-02.jpg",
     bouldering: true,
     autobelay: false,
     toprope: false,
@@ -539,6 +578,8 @@ export const gymData = [
     postal: "218153",
     contact: "62915045",
     website: "https://www.kineticsclimbing.com.sg/",
+    logoURL:
+      "https://static.wixstatic.com/media/8b92f2_763be77770254267976bc39b2cd9bed5~mv2.png/v1/fill/w_167,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Kinetics%20LOGO%20CLEAR.png",
     bouldering: true,
     autobelay: true,
     toprope: "yes?",
@@ -565,6 +606,8 @@ export const gymData = [
     postal: "217664",
     contact: "6292 7701",
     website: "https://www.groundupsg.com/",
+    logoURL:
+      "https://static.wixstatic.com/media/8b92f2_1fb25d945b3f45f0bc807b642fa98b26~mv2.png/v1/fill/w_68,h_68,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8b92f2_1fb25d945b3f45f0bc807b642fa98b26~mv2.png",
     bouldering: true,
     autobelay: true,
     toprope: true,
@@ -591,6 +634,7 @@ export const gymData = [
     postal: "118260",
     contact: "6612 2046",
     website: "https://fitbloc.com/",
+    logoURL: "https://fitbloc.com/wp-content/uploads/2018/08/artboard-2.png",
     bouldering: true,
     autobelay: "?",
     toprope: "?",
@@ -617,6 +661,7 @@ export const gymData = [
     postal: "100108",
     contact: "6252 9161",
     website: "https://fitbloc.com/",
+    logoURL: "https://fitbloc.com/wp-content/uploads/2018/08/artboard-2.png",
     bouldering: true,
     autobelay: false,
     toprope: false,
@@ -643,6 +688,8 @@ export const gymData = [
     postal: "486038",
     contact: "8028 7028",
     website: "https://upwallclimbing.sg/",
+    logoURL:
+      "https://upwallclimbing.sg/wp-content/uploads/2020/10/cropped-Upwall-Climbing-logo-resized.jpeg",
     bouldering: true,
     autobelay: false,
     toprope: false,
@@ -669,6 +716,8 @@ export const gymData = [
     postal: "118504",
     contact: "9724 4091",
     website: "https://www.lighthouseclimbing.com/",
+    logoURL:
+      "https://images.squarespace-cdn.com/content/v1/5e5fd869e74f483de0876589/1583340675328-N0LPL6MU0HGZ1L9VQUZR/Round+Logo_Red.jpg?format=1500w",
     bouldering: true,
     autobelay: false,
     toprope: false,
@@ -695,6 +744,8 @@ export const gymData = [
     postal: "039802",
     contact: "8748 4998",
     website: "https://www.projectsend.co/",
+    logoURL:
+      "https://assets.website-files.com/62945f8f2508d897c02976bd/62ab464efbe45f72b6afd8db_SEND_MAIN_LOGO_GREEN-p-2000.png",
     bouldering: true,
     autobelay: false,
     toprope: false,
@@ -721,6 +772,7 @@ export const gymData = [
     postal: "190464",
     contact: "9832 7656",
     website: "https://t-hall.sg/",
+    logoURL: "https://t-hall.sg/wp-content/uploads/2019/02/logo.png",
     bouldering: true,
     autobelay: true,
     toprope: true,
@@ -747,6 +799,7 @@ export const gymData = [
     postal: "119969",
     contact: "6994 2325",
     website: "https://www.boruda.sg/",
+    logoURL: "https://t-hall.sg/wp-content/uploads/2019/02/logo.png",
     bouldering: true,
     autobelay: false,
     toprope: false,
