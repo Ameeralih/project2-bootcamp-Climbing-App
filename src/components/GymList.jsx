@@ -4,9 +4,6 @@ import { Paper } from "@mui/material";
 import "../css/App.css";
 import { MapsAPI } from "./MapsAPI";
 import { useEffect } from "react";
-import { userLocation } from "./MapsAPI";
-import { getDistance } from "geolib";
-import { gyms } from "./MapsAPI";
 
 export function GymList({ user }) {
   let [searchParams, setSearchParams] = useSearchParams();

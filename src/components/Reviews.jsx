@@ -3,7 +3,6 @@ import { ReviewForm } from "./ReviewForm";
 import { onValue, ref } from "firebase/database";
 import { database } from "../firebase/database";
 import { Paper } from "@mui/material";
-import DeleteOutlinedIcon from "@mui/icons-material/DeleteOutlined";
 
 export const Reviews = ({ currentGym, user }) => {
   const [reviews, setReviews] = useState([]);
@@ -28,8 +27,10 @@ export const Reviews = ({ currentGym, user }) => {
         {reviews.map((review) => {
           return (
             <>
-              <Paper>{review.comment}</Paper>
-              {user.uid === review.userid && <DeleteOutlinedIcon />}
+              <Paper>
+                <div>{review.comment}</div>
+                Posted by: {review.name}
+              </Paper>
             </>
           );
         })}

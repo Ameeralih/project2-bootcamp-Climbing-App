@@ -1,11 +1,9 @@
 import React from "react";
 import "../css/App.css";
-import { gymData } from "../gymdata";
 import {
   GoogleMap,
   useLoadScript,
   Marker,
-  InfoBox,
   InfoWindow,
 } from "@react-google-maps/api";
 import mapStyles from "./mapStyles";
@@ -17,18 +15,15 @@ import {
   Combobox,
   ComboboxInput,
   ComboboxPopover,
-  ComboboxList,
   ComboboxOption,
 } from "@reach/combobox";
 import "@reach/combobox/styles.css";
-import { useRef, useCallback } from "react";
 import { fetchGyms } from "../gymdata";
 import { getDistance } from "geolib";
 import { Link, useSearchParams, useNavigate } from "react-router-dom";
 import { Paper } from "@mui/material";
 
 export let gyms = fetchGyms();
-console.log(gyms);
 export let userLocation = null;
 const libraries = ["places"];
 
@@ -94,7 +89,7 @@ function Search({ panTo }) {
               return 0;
             });
             gyms = newGymsArray;
-            console.log(gyms);
+
             setSelected(null);
           } catch (error) {
             console.log("error!");
