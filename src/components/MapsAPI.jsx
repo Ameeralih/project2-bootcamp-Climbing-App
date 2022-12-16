@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import "../css/App.css";
 import { gymData } from "../gymdata";
 import {
   GoogleMap,
@@ -154,7 +154,11 @@ function Map() {
               {selected === gym && (
                 <InfoWindow onCloseClick={() => setSelected(null)}>
                   <div>
-                    <p>{selected.name}</p>
+                    <b>
+                      <p>{selected.name}</p>
+                    </b>
+                    <p>{selected.address}</p>
+                    <p>{selected.website}</p>
                   </div>
                 </InfoWindow>
               )}
