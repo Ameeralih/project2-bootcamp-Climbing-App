@@ -4,14 +4,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   color: rgb(0, 0, 0);
 }
-
-/* .Gymcard {
-  padding: 12px;
-  min-width: 220px;
-} */
 
 .MuiPaper-root {
   padding: 12px;
@@ -22,7 +17,32 @@
   padding: 0px;
 }
 
+.topNavBar {
+  position: absolute;
+  z-index: 999;
+}
+
 .map-container {
   width: 100%;
   height: 40vh;
+}
+
+.search {
+  position: absolute;
+  top: 11rem;
+  left: 5%;
+  z-index: 10;
+}
+
+.gymCards {
+  padding: 6px;
+  min-width: 220px;
+  max-width: 220px;
+}
+
+.filterInputAndCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

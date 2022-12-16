@@ -743,6 +743,7 @@ export const gymData = [
   {
     name: "Boruda",
     address: "991A Alexandra Road #02-06/07",
+    latlong: [1.2742225338567983, 103.80366412886124],
     postal: "119969",
     contact: "6994 2325",
     website: "https://www.boruda.sg/",

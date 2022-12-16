@@ -5,7 +5,7 @@ import { GymSearch } from "./components/GymSearch";
 import { GymHomePage } from "./components/GymHomePage";
 import { ViewGym } from "./components/ViewGym";
 import { GymList } from "./components/GymList";
-// import { AuthLogin } from "./auth/AuthLogin";
+import { AuthLogin } from "./auth/AuthLogin";
 import { AuthCreate } from "./auth/AuthCreate";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./firebase/auth";
