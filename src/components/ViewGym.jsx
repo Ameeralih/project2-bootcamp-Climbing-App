@@ -68,7 +68,7 @@ export function ViewGym({ user }) {
           )}
         </div>
         <br />
-        {/* <Reviews currentGym={currentGym} user={user} /> */}
+        <Reviews currentGym={currentGym} user={user} />
         <br />
         <br />
       </div>
