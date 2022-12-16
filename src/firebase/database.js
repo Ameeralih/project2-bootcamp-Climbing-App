@@ -4,5 +4,3 @@ import { getDatabase, ref } from "firebase/database";
 export const database = getDatabase(firebaseApp);
 
 export const usersRef = ref(database, "users/");
-
-export const gymsRef = ref(database, "gyms/");

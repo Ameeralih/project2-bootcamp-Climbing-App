@@ -6,6 +6,7 @@ import { TextField } from "@mui/material";
 import { child, push, ref, update } from "firebase/database";
 import { database } from "../firebase/database";
 import MuiAlert from "@mui/material/Alert";
+import { ConstructionOutlined } from "@mui/icons-material";
 
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -30,17 +31,17 @@ function BasicModal({ currentGym, user }) {
   const addNewReview = (e) => {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
+    const newCommentKey = push(
+      child(ref(database), `/gyms/${currentGym.name}`)
+    ).key;
     const newComment = {
-      id: user.uid,
+      userid: user.uid,
       name: user.displayName,
       comment: data.get("review"),
       time: Date.now(),
     };
-    const newCommentKey = push(
-      child(ref(database), `/gyms/${currentGym.name}`)
-    ).key;
     const updates = {};
-    updates[`/gyms/${currentGym.name}` + newCommentKey] = newComment;
+    updates[`/gyms/${currentGym.name}/comments/${newCommentKey}`] = newComment;
     update(ref(database), updates)
       .catch(({ message }) => <Alert severity="error">{message}</Alert>)
       .then(() => {
